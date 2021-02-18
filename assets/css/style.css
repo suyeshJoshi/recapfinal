@@ -308,13 +308,15 @@ button:focus {
 	color: #333;
 }
 .btn-outline-white {
-	background-color: transparent;
-	border: 2px solid #ffffff;
+	background-color: #203F5F;
+	border: 2px solid #203F5F;
 	color: #ffffff;
-	padding: 12px 30px;
+	padding: 15px 40px;
 }
+
 .btn-outline-white:hover {
 	color:#F47119;
+	border-color: white !important;
 }
 .btn-outline-white::before {
 	display: block;
