@@ -42,6 +42,9 @@ body {
 .flex_child{
 	width: 46%;
 }
+.textCenter{
+	text-align: center;
+}
 .division{
 	width: 1px;
 	height: auto;
