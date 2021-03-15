@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- saved from url=(0053)https://suyeshjoshi.github.io/recapfinal/contact.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Meta -->
-<meta charset="utf-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="Anil z" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,12 +37,19 @@
 <link rel="stylesheet" href="assets/css/responsive.css" />
 <link rel="stylesheet" id="layoutstyle" href="assets/color/theme.css" />
 
+    <style>
+        .field{
+            width: 90%; 
+            border: 0; 
+            border-bottom: solid lightgrey 1px;
+        }
+    </style>
 </head>
 
 <body>
 
 <!-- LOADER -->
-<div id="preloader">
+<div id="preloader" class="loaded" style="display: none;">
     <span class="spinner"></span>
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
@@ -50,34 +57,34 @@
 <!-- END LOADER --> 
 
 <!-- START HEADER -->
-<header class="header_wrap dark_skin">
+<header class="header_wrap dark_skin nav-fixed">
     <div class="container">
         <nav class="navbar navbar-expand-lg"> 
-            <a class="navbar-brand" href="index.html">
-                <img class="logo_light" src="assets/images/recap.png" alt="logo" />
-                <img class="logo_dark" src="assets/images/recap.png" alt="logo" />
-                <img class="logo_default" src="assets/images/recap.png" alt="logo" />
+            <a class="navbar-brand" href="https://suyeshjoshi.github.io/recapfinal/index.html">
+                <img class="logo_light" src="./ReCapp _ Contact_files/recap.png" alt="logo">
+                <img class="logo_dark" src="./ReCapp _ Contact_files/recap.png" alt="logo">
+                <img class="logo_default" src="./ReCapp _ Contact_files/recap.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 				<ul class="navbar-nav">
                     <li class="dropdown">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="https://suyeshjoshi.github.io/recapfinal/index.html">Home</a>
                     </li>
                     <li class="dropdown">
-                        <a class="nav-link" href="index.html#overview">OVERVIEW</a>
+                        <a class="nav-link" href="https://suyeshjoshi.github.io/recapfinal/index.html#overview">OVERVIEW</a>
                     </li>
                     <li class="dropdown">
-                        <a class="nav-link" href="index.html#whyRecapp">WHY RECAPP</a>
+                        <a class="nav-link" href="https://suyeshjoshi.github.io/recapfinal/index.html#whyRecapp">WHY RECAPP</a>
                     </li>
                     <li class="dropdown">
-                        <a class="nav-link" href="index.html#pricing">PRICING</a>
+                        <a class="nav-link" href="https://suyeshjoshi.github.io/recapfinal/index.html#pricing">PRICING</a>
                     </li>
                     <li>
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link active" href="https://suyeshjoshi.github.io/recapfinal/contact.html">Contact</a>
                     </li>
                     <li class="dropdown" id="downloadList">
-                        <a class="btn btn-default animation" href="https://play.google.com/store/apps/details?id=com.Antiz.Recapp&hl=en_US" target="_blank" data-animation-delay="1.8s">FREE TRIAL</a>
+                        <a class="btn btn-default animation animated" href="https://play.google.com/store/apps/details?id=com.Antiz.Recapp&amp;hl=en_US" target="_blank" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;">FREE TRIAL</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +98,7 @@
 	<div class="container">	
     	<div class="row justify-content-center">
         	<div class="col-xl-6 col-lg-8">
-            	<div class="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
+            	<div class="text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style="animation-delay: 0.01s; opacity: 1;">
                     <div class="heading_s1 text-center">
                         <h2>Get In Touch</h2>
                     </div>
@@ -99,44 +106,61 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 animation box_shadow1 radius_all_10 tocenter" data-animation="fadeInLeft" data-animation-delay="0.02s">
+        <div class="col-md-12 animation box_shadow1 radius_all_10 tocenter animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
             <div class="padding_eight_all">
                 <div class="field_form">
-                    <form action="https://formspree.io/f/mleokoar" method="post">
+    <!--****Form begins Modification done here-->
+                    <form method="post" id="contactForm" name="contactForm" action="email.php" onsubmit="return sendForms()">
                         <div class="row">
                             <div class="form-group col-12">
-                                <input required="required" placeholder="Enter Name" id="name" class="form-control" name="name" type="text">
+                                <sup style="color: red">&#42;</sup>
+                                <input required="required" placeholder="Enter Name" id="name" class="field" name="name" type="text">
                              </div>
                             <div class="form-group col-12">
-                                <input required="required" placeholder="Enter Email" id="email" class="form-control" name="email" type="email">
+                                <sup style="color: red">&#42;</sup>
+                                <input required="required" placeholder="Enter Email" id="email" class="field" name="email" type="email">
                             </div>
                             <div class="form-group col-12">
-                                <input required="required" placeholder="Enter Phone No." id="phone" class="form-control" name="phone" type="tel">
+                                <sup style="color: red">&#42;</sup>
+                                <input required="required" placeholder="Enter Phone No." id="phone" class="field" name="phone" type="tel">
+                            </div>
+                            
+                            <div class="form-group col-12">
+                                <sup style="color: red">&nbsp;</sup>
+                                <input placeholder="Enter Your Designation" id="designation" class="field" name="designation" type="text">
                             </div>
                             <div class="form-group col-12">
-                                <input placeholder="Enter Your Designation" id="designation" class="form-control" name="designation" type="text">
+                                <sup style="color: red">&nbsp;</sup>
+                                <input placeholder="Enter Your Institution" id="institution" class="field" name="institution" type="text">
                             </div>
                             <div class="form-group col-12">
-                                <input placeholder="Enter Your Institution" id="institution" class="form-control" name="institution" type="text">
-                            </div>
-                            <div class="form-group col-12">
-                                <input placeholder="Enter Subject" id="subject" class="form-control" name="subject" type="text">
+                                <sup style="color: red">&nbsp;</sup>
+                                <input placeholder="Enter Subject" id="subject" class="field" name="subject" type="text">
                             </div>
                             <div class="form-group col-lg-12">
-                                <textarea required="required" placeholder="Message" id="description" class="form-control" name="message" rows="3"></textarea>
+                                <sup style="color: red">&nbsp;</sup>
+                                <textarea required="required" placeholder="Message (required)" id="description" class="" name="message" rows="3" style="width: 90%"></textarea>
                             </div>
                             <div class="col-lg-12">
+                                <sup style="color: red">&nbsp;</sup>
                                 <button type="submit" title="Submit Your Message!" class="btn btn-default" value="Submit">Submit</button>
                             </div>
                             <div class="col-lg-12 text-center">
                                 <div id="alert-msg" class="alert-msg text-center"></div>
                             </div>
                         </div>
-                    </form>		
+                    </form>	                    
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+    function sendForms(){
+        alert("Your message has been sent, thank you.");
+        return true;
+    }
+    </script>
 </section>
 <!-- END SECTION CONTACT -->
 
@@ -158,7 +182,7 @@
             </div>
             <div class="col-md-4">
             	<div class="text-md-right">
-                    <a href="https://play.google.com/store/apps/details?id=com.Antiz.Recapp&hl=en_US" target="_blank" class="btn btn-outline-white">FREE TRIAL</a>
+                    <a href="https://recapp.2recapp.com/login/freetrial" target="_blank" class="btn btn-outline-white">FREE TRIAL</a>
                 </div>
                 <div class="medium_divider d-block d-md-none"></div>
             </div>
@@ -174,7 +198,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-7 footer_mar_bottom">
                 	<div class="footer_logo">
-                    	<a href="index.html"><img alt="logo" src="assets/images/white.png"></a>
+                    	<a href="https://suyeshjoshi.github.io/recapfinal/index.html"><img alt="logo" src="./ReCapp _ Contact_files/white.png"></a>
                     </div>
                     <p>Study Smart, Perform Better.</p>
                     <ul class="contact_info contact_info_light list_none">
@@ -191,11 +215,10 @@
                 <div class="col-lg-6 col-md-7">
                 	<h6 class="widget_title">Useful Links</h6>
                     <ul class="list_none widget_links links_style1">
-                    	<li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCpU-nZll-D-HBphipH4dA1A" target="_blank">Videos</a></li>
-                        <li><a href="assets/images/Legal.docx.pdf" target="_blank" >Legal</a></li>
+                    	<li><a href="https://suyeshjoshi.github.io/recapfinal/about.html">About Us</a></li>
+                        <li><a href="https://suyeshjoshi.github.io/recapfinal/team.html">Team</a></li>
+                        <li><a href="https://suyeshjoshi.github.io/recapfinal/contact.html">Contact Us</a></li>
+                        <li><a href="https://suyeshjoshi.github.io/recapfinal/assets/images/Legal.docx.pdf" target="_blank">Legal</a></li>
                     </ul>
                 </div>
             </div>
@@ -213,36 +236,37 @@
 </footer>
 <!-- END FOOTER -->
 
-<a href="https://play.google.com/store/apps/details?id=com.Antiz.Recapp&hl=en_US" target="_blank" class="scrollup" style="display: none;">FREE TRIAL</a> 
+<a href="https://play.google.com/store/apps/details?id=com.Antiz.Recapp&amp;hl=en_US" target="_blank" class="scrollup" style="display: none;">FREE TRIAL</a> 
 
 <!-- Latest jQuery --> 
-<script src="assets/js/jquery-1.12.4.min.js"></script> 
+<script src="./ReCapp _ Contact_files/jquery-1.12.4.min.js"></script> 
 <!-- jquery-ui --> 
-<script src="assets/js/jquery-ui.js"></script>
+<script src="./ReCapp _ Contact_files/jquery-ui.js"></script>
 <!-- popper min js --> 
-<script src="assets/js/popper.min.js"></script>
+<script src="./ReCapp _ Contact_files/popper.min.js"></script>
 <!-- Latest compiled and minified Bootstrap --> 
-<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<script src="./ReCapp _ Contact_files/bootstrap.min.js"></script> 
 <!-- owl-carousel min js  --> 
-<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<script src="./ReCapp _ Contact_files/owl.carousel.min.js"></script> 
 <!-- magnific-popup min js  --> 
-<script src="assets/js/magnific-popup.min.js"></script> 
+<script src="./ReCapp _ Contact_files/magnific-popup.min.js"></script> 
 <!-- waypoints min js  --> 
-<script src="assets/js/waypoints.min.js"></script> 
+<script src="./ReCapp _ Contact_files/waypoints.min.js"></script> 
 <!-- parallax js  --> 
-<script src="assets/js/parallax.js"></script> 
+<script src="./ReCapp _ Contact_files/parallax.js"></script> 
 <!-- countdown js  --> 
-<script src="assets/js/jquery.countdown.min.js"></script> 
+<script src="./ReCapp _ Contact_files/jquery.countdown.min.js"></script> 
 <!-- jquery.counterup.min js --> 
-<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="./ReCapp _ Contact_files/jquery.counterup.min.js"></script>
 <!-- imagesloaded js --> 
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="./ReCapp _ Contact_files/imagesloaded.pkgd.min.js"></script>
 <!-- isotope min js --> 
-<script src="assets/js/isotope.min.js"></script>
+<script src="./ReCapp _ Contact_files/isotope.min.js"></script>
 <!-- jquery.parallax-scroll js -->
-<script src="assets/js/jquery.parallax-scroll.js"></script>
+<script src="./ReCapp _ Contact_files/jquery.parallax-scroll.js"></script>
 <!-- scripts js --> 
-<script src="assets/js/scripts.js"></script>
+<script src="./ReCapp _ Contact_files/scripts.js"></script>
 
-</body>
-</html> 
+
+ 
+</body></html>
